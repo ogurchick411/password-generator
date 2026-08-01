@@ -29,13 +29,39 @@ h2 {
     padding: 12px; 
     font-size: 18px; 
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 8px; 
     border-radius: 5px; 
     word-break: break-all;
     min-height: 45px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+.result-container span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+}
+.btn-copy {
+    background: #334155;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+.btn-copy:hover {
+    background: #475569;
+}
+.strength-meter {
+    height: 4px;
+    background: #334155;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    width: 0%;
 }
 .setting { 
     display: flex; 
